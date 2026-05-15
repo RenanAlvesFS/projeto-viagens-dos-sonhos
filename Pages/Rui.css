@@ -1,159 +1,98 @@
-body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #000dc2c9;
-    padding:0px;
-    margin: 0px;
-    color: #ffffff;
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-header {
-    background-color: #eaeaff;
-    padding: 20px;
-    text-align: center;
-}
+<head>
+    <metacharset="UTF-8">
+        <title>Minha Viagem dos Sonhos</title>
+        <link rel="stylesheet" href="Rui.css">
+</head>
 
-h1 {
-    color: #2c3e50;
-}
+<body>
 
+    <header>
+        <h1>Minha Viagem dos Sonhos</h1>
+    </header>
 
-img {
-background-position: center;
-image-rendering: -webkit-optimize-contrast;
-}
+    <div class="JP_foto_1">
+    </div>
 
-a {
-    color: #030303;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-li {
-    margin: 10px 0;
-    color: #ffffff;
-    list-style-type: none;
-}
-
-hr {
-  padding: 0px;
-  margin: 0px;
-}
-
-.hero-container {
-    position: relative; 
-    width: 100%;
-}
-
-.hero-container img {
-    width: 100%;
-    display: block; 
-}
-
-.JP_foto_1 {
-background-image: url('../Images/Japao_image_1.jpg');
-    background-size: cover;      
-    background-position: center; 
-    height: 500px;      
-    width: 100%;         
-    display: flex;               
-    align-items: center;         
-    justify-content: center;
-}
-
-.overlay-texto {
-    position: absolute; 
-    top: 13%;           
-    left: 50%;          
-    transform: translate(-50%, -50%); 
-    font-size: 9px;
-    width: 100%;         
-    padding: 5px;
-    padding-left: 800px;
-    
-   
-    background-color: rgba(255, 255, 255, 0.5); 
-    
-    backdrop-filter: blur(5px); /* Efeito de vidro embaçado (opcional) */
-}
+    <div class="container_1">
+        <div class="overlay-texto">
+            <h1>
+                Japão: Terra do sol nascente.
+            </h1>
+        </div>
+    </div>
 
 
-.Introdução_JP {
-    padding: 20px;
-    color: #ffffff;
-    max-width: 450px;
-    margin: 0;
-    font-size: larger;
-}
+    <div class="Introducao">
 
-.Introducao {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 300px;
-    padding: 40px;
-}
+        <img src="../Images/Japao_image_2.webp" alt="JP_foto_2">
 
-.Introducao img {
-  width: 400px;
-  height: auto;
-  border-radius: 5px;
-}
+        <div class="Introdução_JP">
+            <h2>Sobre o lugar</h2>
+            <p>O Japão é um arquipélago fascinante onde a tradição milenar e a tecnologia de ponta coexistem em uma
+                harmonia
+                quase
+                poética. Conhecido como a "Terra do Sol Nascente", o país encanta pela preservação de seus templos
+                antigos,
+                cerimônias de chá e jardins zen, ao mesmo tempo em que lidera o mundo com metrópoles vibrantes como
+                Tóquio,
+                trens
+                de
+                alta velocidade e uma cultura pop influente. Além da estética impecável e da culinária refinada, a
+                sociedade
+                japonesa é profundamente admirada por seus valores de respeito, disciplina e coletividade, refletidos em
+                cidades
+                extremamente organizadas e seguras que oferecem uma experiência sensorial única entre o passado sagrado
+                e o
+                futuro
+                futurista.</p>
+        </div>
+    </div>
+
+    <section class="EntreLinhas">
+        <div class="Segundo_paragrafo">
+            <h2>Por que escolhi esse lugar?</h2>
+            <p>O Japão é um local que sempre chamou minha atenção. isso ocorre principalmente por causa da minha
+                conexção
+                cuktural
+                com o Japão, além de eu ter familia japônesa, da qual eu quero muito poder conhecer melhor.</p>
+        </div>
+    </section>
+    <div class="Especial">
+        <h2>Pontos turísticos</h2>
+    </div>
+    <ul class="Colunas">
+
+        <li>
+            <a href="https://www.japan-guide.com/e/e2164.html" target="_blank" class="link-imagem">
+                <img src="../Images/Japao_image_1.jpg" alt="Toquio">
+            </a>
+            <br>
+            Tóquio
+        </li>
+        <li>
+            <a href="https://www.japan-guide.com/e/e2157.html" target="_blank" class="link-imagem">
+                <img src="../Images/Osaka_image_1.jpg" alt="Toquio">
+            </a>
+            <br>
+            Osaka
+        </li>
+        <li>
+            <a href="https://visitquito.ec/" target="_blank" class="link-imagem">
+                <img src="../Images/Quioto_image_1.webp" alt="Toquio">
+            </a>
+            <br>
+            Kyoto
+        </li>
+    </ul>
 
 
-.Segundo_paragrafo {
-  text-align: center;
-  padding: 20px;
-  background-color: royalblue;
-  margin: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 25px;
-}
+    <footer>
+        <h2>Links úteis</h2>
+        <a href="https://www.japan.travel/pt/br/">Site oficial</a>
+    </footer>
+</body>
 
-.EntreLinhas {
-  background-image: url('../Images/Fundo_JP_1.avif');
-  background-size: cover;
-  padding: 25px;
-}
-
-.Especial {
-  text-align: center;
-  font-size: 30px;
-}
-
-.Colunas {
-  display: flex;
-  justify-content: center; /* Centraliza a lista dentro da div roxa */
-  margin: 0px;
-}
-
-
-
-.Colunas ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 15px; 
-  justify-content: center;
-  list-style: none; 
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.Colunas img {
-  width: 450px;         
-  height: auto;        
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
-  display: block;
-}
-
-footer {
-    background-color: #ffffff;
-    color: black;
-    text-align: center;
-}
+</html>
